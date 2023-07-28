@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Contact Us</h3>
+          <img class="img" src="image/v1.jpg" alt=""> 
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+          <form action="stor.php" method="POST" autocomplete="off">
+            <h3 class="title">Send Us a Message</h3>
+            <div class="input-container">
+                <div class="name">
+                    <input type="text" name="fname" placeholder="First Name" class="input" />
+                    <input type="text" name="lname" placeholder="Last Name" class="input" />
+                </div>
+            </div>
+            <div class="input-container">
+              <input type="email" placeholder="Your Email" name="email" class="input" />
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" placeholder="Phone Number" class="input" />
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" placeholder="Write a Message" class="input"></textarea>
+            </div>
+            <input type="submit" value="submit" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
